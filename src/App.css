@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #0751ef;
+  --danger-color: #520120;
+  --white-color: #FFFFFF;
+  --primary-opac-color: hsla(178, 37%, 60%, 0.767);
+}
+.gras{
+ font-family: var(--black-color);
+}
+
+.col-0{
+
+   height: 10%;
+    padding: 1%;
+    color:red;
+}
+.form-control{
+ 
+  width: 30%;
+  height: 25px;
+  padding: 5px 10px;
+  outline: 10px var(--primary-color);
+ 
+
+}
+.form-control:hover {
+ 
+  
+  border: 2px solid blue;
+
+}
+
+
+
+
+.btn{
+  width: 31.5%;
+  padding: 1%;
+  background: var(--primary-opac-color);
+  text-align: left;
+  margin-left: 1%;
+
+}
+
+
+.col-1 {
+padding: 1%;
+}
+
+  .col-3 {
+    margin-left: 1%;
+    color: blue;
+    padding: 1%;
+      
+    }
+.container{
+  border-radius: 2px solid grey;
+  margin-left: 5%;
+}
