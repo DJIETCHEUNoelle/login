@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Login from './login/login';
+import { useState } from 'react';
+import Main from './View/Main/main';
 
 function App() {
+  const [open, setOpen] = useState(true)
   return (
     <div className="App">
-     <Login/>
+      <Main />
     </div>
   );
 }

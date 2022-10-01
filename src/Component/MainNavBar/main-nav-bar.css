@@ -1,0 +1,18 @@
+.nav-content{
+    height: 60px;
+    width: 100%;
+    display: inline-block;
+    background-color: cornflowerblue;
+}
+.nav-title{
+    width: 80px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.nav-active{  
+    font-weight: bold;
+    border-bottom: 5px solid rgb(42, 7, 148);
+}
