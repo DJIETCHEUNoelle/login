@@ -9,7 +9,26 @@ class Forgot extends Component {
     render(){
         return (
             <Fragment>
-                forgot &nbsp;
+                <div className="body"><br></br><br></br>
+        <div className="login">
+              FORGOT PASSWORD
+        </div><br></br><br></br>
+         <div className="Form">
+             
+             <input typeof='text' className='Form-control' placeholder='Email Adresse' /><br></br><br></br>
+          
+
+         </div>
+
+         <div className="button">
+            <button className="blanc">Send recovery Email</button>
+         </div><br></br><br></br>
+
+         <div className="Forgot">
+         An email will be sent to your email adress to allow you to reset your password
+         </div>
+
+    </div>
             </Fragment>
         )
     }

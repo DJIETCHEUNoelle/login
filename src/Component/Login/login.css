@@ -1,0 +1,42 @@
+
+.body{
+    margin: 40px;
+}
+
+.login{
+
+ font-weight: bold;
+ font-size: 30px;  
+ }
+.form-control{
+ border: 2px solid blue;
+ width: 54%;
+}
+.Form:hover{
+
+color: blue;
+
+}
+
+.blanc{
+    color: white;
+    text-align: center;
+    width: 61%;
+    background-color: blue;
+    height: 40px;
+   
+}
+.forgot{
+    color: blue;
+    text-align: center;
+    width: 60%;
+    border: 1px white;
+   
+}
+.button{
+    background-color: blue;
+    height: 30%;
+}
+
+
+
