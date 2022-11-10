@@ -9,11 +9,19 @@
  font-weight: bold;
  font-size: 30px;  
  }
-.Form-control{
-border: 2px solid beige;
+.control{
+border: 2px solid rgb(12, 25, 123);
  
  width: 64%;
 }
+.control:hover{
+
+    
+    box-shadow: 0 3px 6px rgba(12,25,123,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    }
+
+
 
 
 .blanc{
@@ -31,9 +39,14 @@ border: 2px solid beige;
     border: 1px white;
    
 }
-.button{
-    background-color: blue;
+.button3{
+    padding: 10px;
+    text-align:center;
+    cursor: pointer;
+    border-radius: 20px;
     height: 30%;
+    width: 63%;
+    border: none;
 }
 
 

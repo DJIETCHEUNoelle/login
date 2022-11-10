@@ -21,6 +21,7 @@
     border: 2px solid blue;
     
     }
+    
 
 
 .blanc{
@@ -31,17 +32,24 @@
     height: 40px;
    
 }
-.Forgot{
-   border: 2px solid beige;
+.terms{
+    margin: 1px;
+    border: 2px solid beige;
     text-align: center;
     width: 60%;
     border: 1px white;
    
 }
-.button{
-    background-color: blue;
-    height: 30%;
-}
+
+.button2{
+        padding: 10px;
+        text-align:center;
+        cursor: pointer;
+        border-radius: 20px;
+        height: 30%;
+        width: 50%;
+        border: none;
+    }
 
 
 

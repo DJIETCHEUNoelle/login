@@ -1,57 +1,89 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, useEffect  } from "react";
 import './main-nav-bar.css';
 
 class MainNavBar extends Component{
     constructor(props){
         super(props);
         this.state = {
+
+            //ce que jajoute
+          
             loginNav : "nav-active",
             signUpNav : "",
             forgotNav : "",
-            isForgot : true,
+            
+            isForgot : false,
+            
         }
     }
+    
+    
 
-    activeNavBar(element){
+    activenavBar(element){
         if(element === 'loginNav'){
             this.setState({
                 loginNav : "nav-active",
                 signUpNav : "",
-                forgotNav : "",
+                isForgot : false,
+              
             })
             this.props.handleLogin();
         }else if(element === 'signUpNav'){
             this.setState({
+                isForgot : false,
+
                 loginNav : "",
                 signUpNav : "nav-active",
-                forgotNav : "",
+               
             })
             this.props.handleSignUp();
-        }else if(element === 'forgotNav'){
+        }
+      
+          else if(element === 'forNav'){
             this.setState({
+                
                 loginNav : "",
                 signUpNav : "",
+                isForgot: true,
                 forgotNav : "nav-active",
             })
             this.props.handleForgot();
-        }
+        }   
+
     }
+    
+   
+    //ce que jajoute
+    
+  
 
     render(){
-        const {loginNav, signUpNav, forgotNav, isForgot} = this.state
+        const {loginNav, signUpNav,forgotNav,isForgot,forNav} = this.state
         return (
             <Fragment>
                 <div className="nav-content">
-                    <div onClick={()=>{this.activeNavBar("loginNav")}} className={"nav-title "+ loginNav}>Login</div>
-                    <div onClick={()=>{this.activeNavBar("signUpNav")}} className={"nav-title "+ signUpNav}>Sign Up</div>
-                    {
+                    <div onClick={()=>{this.activenavBar("loginNav")}} className={"nav-title "+ loginNav}>Login</div>
+                    <div onClick={()=>{this.activenavBar("signUpNav")}} className={"nav-title "+ signUpNav}>Sign Up</div>
+                 {/*    {
+                        
                         isForgot &&
-                        <div onClick={()=>{this.activeNavBar("forgotNav")}} className={"nav-title "+ forgotNav}>Forgot</div>
-                    }
-                </div>
+                        <div onClick={()=>{this.activeNavBar("ahrefNav")}} className={"nav-title "+ ahrefNav}>Forgot</div>
+                    }  */}
+               
+
+                
+                 {
+                     isForgot &&
+                    <div onClick={()=>{this.activenavBar("forgotNav")}} className={"nav-title "+ forgotNav}>Forgot</div>
+             } 
+                <div onClick={()=>{this.activenavBar("forNav")}} className={"nav "+ forNav}>Forgot your password</div> 
+
+             </div>      
+               
+
             </Fragment>
         ) 
     }
 }
 
-export default MainNavBar
+export default MainNavBar;

@@ -1,8 +1,10 @@
 import React, { Component, Fragment, useEffect } from "react";
+
 import Forgot from "../../Component/Forgot/forgot";
 import Login from "../../Component/Login/login";
 import MainNavBar from "../../Component/MainNavBar/main-nav-bar";
 import SignUp from "../../Component/SignUp/sign-up";
+
 import './main.css';
 
 class Main extends Component {
@@ -11,11 +13,16 @@ class Main extends Component {
         this.handleLogin = this.handleLogin.bind(this)
         this.handleSignUp = this.handleSignUp.bind(this)
         this.handleForgot = this.handleForgot.bind(this)
+        //ce que jajoute
+        //this.handleAhref=this.handleAhref.bind(this)
     }
     state = {
         isLogin : true,
         isSignUp : false,
         isForgot : false,
+       
+        
+
     }
 
     handleLogin(){
@@ -23,6 +30,7 @@ class Main extends Component {
             isLogin : true,
             isSignUp : false,
             isForgot : false,
+            //isahref: false,
         })
     }
 
@@ -34,23 +42,48 @@ class Main extends Component {
         })
     }
 
-    handleForgot(){
+     handleForgot(){
         this.setState({
             isLogin : false,
             isSignUp : false,
             isForgot : true,
         })
-    }
+    }  
+    
+
+   /*  handlea(){
+        this.setState({
+            isLogin : false,
+            isSignUp : false,
+            isa : true,
+        })
+    } */
+    //ce que jajoute
+
+   /*   handleAhref(){
+        this.setState(
+            {
+                isLogin : false,
+                isSignUp : false,
+                isForgot : true,
+              
+
+            }
+        )
+    }  */ 
 
     render(){
         const {isLogin, isSignUp, isForgot} = this.state
         return (
             <Fragment>
                 <div className="main-content">
-                    <MainNavBar handleForgot={this.handleForgot} handleLogin={this.handleLogin} handleSignUp={this.handleSignUp} />
+                <MainNavBar handleLogin={this.handleLogin} handleSignUp={this.handleSignUp} handleForgot={this.handleForgot}/>
+
                     {isLogin && <Login />}
                     {isSignUp && <SignUp />}
                     {isForgot && <Forgot />}
+                    
+
                 </div>
             </Fragment>
         )

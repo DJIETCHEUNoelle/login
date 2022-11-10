@@ -1,10 +1,11 @@
 import React, { Component, Fragment, useEffect } from "react";
+
 import './forgot.css';
 
 class Forgot extends Component {
     constructor(props){
         super(props)
-    }
+        }
 
     render(){
         return (
@@ -15,12 +16,12 @@ class Forgot extends Component {
         </div><br></br><br></br>
          <div className="Form">
              
-             <input typeof='text' className='Form-control' placeholder='Email Adresse' /><br></br><br></br>
+             <input typeof='text' className='control' placeholder='Email Adresse' /><br></br><br></br>
           
 
          </div>
 
-         <div className="button">
+         <div className="button3">
             <button className="blanc">Send recovery Email</button>
          </div><br></br><br></br>
 

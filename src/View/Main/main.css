@@ -1,9 +1,10 @@
 .main-content{
-    width: 30%;
-    height: 470px;
+    width: 35%;
+    height: 550px;
     border: 2px;
     margin-left: 35%;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
    
 }

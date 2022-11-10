@@ -1,9 +1,12 @@
 import React, { Component, Fragment, useEffect } from "react";
+
 import './sign-up.css';
 
 class SignUp extends Component {
     constructor(props){
         super(props)
+
+       //this.props.history.push('/terms');
     }
 
     render(){
@@ -20,12 +23,12 @@ class SignUp extends Component {
 
          </div>
 
-         <div className="button">
+         <div className="button2">
             <button className="blanc">Sign UP</button>
-         </div><br></br><br></br>
+         </div>
 
-         <div className="Forgot">
-           By signing up your agree to our <a href="#">Terms of Service</a>
+         <div className="terms">
+           By signing up your agree to our <a href="terms">Terms of Service</a>
          </div>
 
     </div>
